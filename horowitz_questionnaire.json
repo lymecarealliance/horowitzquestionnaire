@@ -1,0 +1,105 @@
+{
+  "horowitz_questionnaire": {
+    "author": "Dr. Richard I. Horowitz",
+    "purpose": "Assessment tool for Lyme disease and related tick-borne illnesses. Not for self-diagnosis.",
+    "sections": [
+      {
+        "id": 1,
+        "name": "Symptom Frequency Score",
+        "scoring_scale": { "0": "None", "1": "Mild", "2": "Moderate", "3": "Severe" },
+        "symptoms": [
+          { "id": 1, "description": "Unexplained fevers, sweats, chills, or flushing" },
+          { "id": 2, "description": "Unexplained weight change; loss or gain" },
+          { "id": 3, "description": "Fatigue, tiredness" },
+          { "id": 4, "description": "Unexplained hair loss" },
+          { "id": 5, "description": "Swollen glands" },
+          { "id": 6, "description": "Sore throat" },
+          { "id": 7, "description": "Testicular or pelvic pain" },
+          { "id": 8, "description": "Unexplained menstrual irregularity" },
+          { "id": 9, "description": "Unexplained breast milk production; breast pain" },
+          { "id": 10, "description": "Irritable bladder or bladder dysfunction" },
+          { "id": 11, "description": "Sexual dysfunction or loss of libido" },
+          { "id": 12, "description": "Upset stomach" },
+          { "id": 13, "description": "Change in bowel function (constipation or diarrhea)" },
+          { "id": 14, "description": "Chest pain or rib soreness" },
+          { "id": 15, "description": "Shortness of breath or cough" },
+          { "id": 16, "description": "Heart palpitations, pulse skips, heart block" },
+          { "id": 17, "description": "History of a heart murmur or valve prolapse" },
+          { "id": 18, "description": "Joint pain or swelling" },
+          { "id": 19, "description": "Stiffness of the neck or back" },
+          { "id": 20, "description": "Muscle pain or cramps" },
+          { "id": 21, "description": "Twitching of the face or other muscles" },
+          { "id": 22, "description": "Headaches" },
+          { "id": 23, "description": "Neck cracks or neck stiffness" },
+          { "id": 24, "description": "Tingling, numbness, burning, or stabbing sensations" },
+          { "id": 25, "description": "Facial paralysis (Bell’s palsy)" },
+          { "id": 26, "description": "Eyes/vision: double, blurry" },
+          { "id": 27, "description": "Ears/hearing: buzzing, ringing, ear pain" },
+          { "id": 28, "description": "Increased motion sickness, vertigo" },
+          { "id": 29, "description": "Light-headedness, poor balance, difficulty walking" },
+          { "id": 30, "description": "Tremors" },
+          { "id": 31, "description": "Confusion, difficulty thinking" },
+          { "id": 32, "description": "Difficulty with concentration or reading" },
+          { "id": 33, "description": "Forgetfulness, poor short-term memory" },
+          { "id": 34, "description": "Disorientation: getting lost; going to wrong places" },
+          { "id": 35, "description": "Difficulty with speech or writing" },
+          { "id": 36, "description": "Mood swings, irritability, depression" },
+          { "id": 37, "description": "Disturbed sleep: too much, too little, early awakening" },
+          { "id": 38, "description": "Exaggerated symptoms or worse hangover from alcohol" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Most Common Lyme Symptoms Score",
+        "logic": "If rated 3 in Section 1, add 5 points",
+        "bonus_symptoms": [3, 33, 18, 24, 37]
+      },
+      {
+        "id": 3,
+        "name": "Lyme Incidence Score",
+        "items": [
+          { "id": 44, "description": "Tick bite with no rash or flu-like symptoms", "points": 3 },
+          { "id": 45, "description": "Tick bite, rash or erythema migrans, followed by flu-like symptoms", "points": 5 },
+          { "id": 46, "description": "Living in Lyme-endemic area", "points": 2 },
+          { "id": 47, "description": "Family member diagnosed with Lyme or tick-borne infections", "points": 1 },
+          { "id": 48, "description": "Migratory muscle pain", "points": 4 },
+          { "id": 49, "description": "Migratory joint pain", "points": 4 },
+          { "id": 50, "description": "Tingling/burning/numbness that migrates or comes and goes", "points": 4 },
+          { "id": 51, "description": "Prior diagnosis of chronic fatigue syndrome or fibromyalgia", "points": 3 },
+          { "id": 52, "description": "Prior diagnosis of autoimmune disorder (lupus, MS, RA, or nonspecific)", "points": 3 },
+          { "id": 53, "description": "Positive Lyme test (IFA, ELISA, Western blot, PCR, borrelia culture)", "points": 5 }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Overall Health Score",
+        "categories": [
+          {
+            "name": "Physical health",
+            "scoring": [
+              { "range": "0-5", "points": 1 },
+              { "range": "6-12", "points": 2 },
+              { "range": "13-20", "points": 3 },
+              { "range": "21-30", "points": 4 }
+            ]
+          },
+          {
+            "name": "Mental health",
+            "scoring": [
+              { "range": "0-5", "points": 1 },
+              { "range": "6-12", "points": 2 },
+              { "range": "13-20", "points": 3 },
+              { "range": "21-30", "points": 4 }
+            ]
+          }
+        ]
+      }
+    ],
+    "scoring_interpretation": [
+      { "range": "0-20", "interpretation": "Not likely to have a tick-borne disorder." },
+      { "range": "21-45", "interpretation": "Possible tick-borne disorder. Seek medical evaluation." },
+      { "range": "46+", "interpretation": "High probability of tick-borne disorder. Seek medical evaluation." }
+    ],
+    "disclaimer": "This questionnaire is for informational purposes only. Not a substitute for professional medical advice."
+  }
+}
