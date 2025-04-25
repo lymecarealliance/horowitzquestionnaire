@@ -7,6 +7,8 @@ This repository contains structured data and documentation for the **Horowitz Ly
 - **horowitz_questionnaire.md**: A detailed Markdown version of the questionnaire.
 - **horowitz_questionnaire.yaml**: A structured YAML format for technical applications.
 - **horowitz_questionnaire.json**: A structured JSON format for integrations and automation.
+- **horowitz_scoring.py**: Python function to compute scores based on symptom input.
+- **horowitz_scoring.js**: JavaScript function for score calculation, useful for web apps or bots.
 
 ## Purpose
 
@@ -15,6 +17,7 @@ The Horowitz Lyme-MSIDS Questionnaire is intended for informational use to help 
 ## Repository Goals
 
 - Provide clean, structured data for use in AI models, RAG bots, and healthcare systems.
+- Offer scoring logic functions for developers to automate assessments.
 - Support open collaboration on improving Lyme disease awareness and assessment tools.
 
 ## Visit Us
@@ -28,6 +31,7 @@ You can use these files to:
 - Integrate with AI tools like Retrieval-Augmented Generation (RAG) systems.
 - Analyze and process Lyme disease symptoms and risk factors.
 - Build interfaces or automated assessments based on the questionnaire logic.
+- Use provided Python and JavaScript functions to calculate questionnaire scores programmatically.
 
 ## Disclaimer
 
@@ -38,4 +42,3 @@ This repository is for **informational purposes only**. The content is not inten
 ## License
 
 This project is open for educational and research purposes. Please credit the original author Dr. Richard I. Horowitz when referencing the questionnaire.
-
